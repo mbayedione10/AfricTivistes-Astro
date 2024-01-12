@@ -30,6 +30,7 @@ const integrations = await getSinglePage("integrations");
   <!-- key features -->
   <!-- Featured Blog -->
    <div class="container">
+        <h2 class="h4 mb-4">Dernieres actualités</h2>
         <FeaturedBlog posts = {featuredPost}/>
    </div>
 
@@ -38,6 +39,10 @@ const integrations = await getSinglePage("integrations");
     integrations={integrations}
     categories={categories}
   />
+    <div class="container">
+        <h2 class="h4 mb-4">Communiqués</h2>
+        <FeaturedBlog posts = {featuredPost}/>
+   </div>
   
   <KeyFeatures key_features={key_features} />
   <!-- service -->
