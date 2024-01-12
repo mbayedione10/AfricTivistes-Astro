@@ -5,8 +5,16 @@ import KeyFeatures from "@layouts/components/KeyFeatures.astro";
 import Testimonial from "@layouts/components/Testimonial.astro";
 import Service from "@layouts/components/Service.astro";
 import Cta from "@layouts/partials/Cta.astro";
+import config from "@config/config.json";
+import FeaturedBlog from "@components/blog/FeaturedBlog.astro";
 import { getEntryBySlug } from "astro:content";
+import { sortByDate } from "@lib/utils/sortFunctions";
+import { getSinglePage } from "@lib/contentParser.astro";
 
+const { blog_folder } = config.settings;
+const posts = await getSinglePage(blog_folder);
+const sortedPosts = sortByDate(posts);
+const featuredPost = sortedPosts.filter((item) => item.data.featured);
 const homepage = await getEntryBySlug("homepage", "index");
 const { banner, key_features, service, testimonial } = homepage.data;
 ---
@@ -15,6 +23,11 @@ const { banner, key_features, service, testimonial } = homepage.data;
   <!-- banner -->
   <Banner banner={banner} />
   <!-- key features -->
+  <!-- Featured Blog -->
+   <div class="container">
+        <FeaturedBlog posts = {featuredPost}/>
+   </div>
+  
   <KeyFeatures key_features={key_features} />
   <!-- service -->
   <Service service={service} />
