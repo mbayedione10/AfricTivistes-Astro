@@ -9,8 +9,10 @@ const IntegrateMedia = ({ integrations, categories }) => {
     ? integrations
     : integrations.filter((post) => post.data.categories.includes(tab));
   return (
+    
     <section className="section pt-0">
       <div className="container">
+        <h2 class="h4 mb-4">Nos Programmes</h2>
         <div className="row justify-center">
           <div className="lg:col-10">
             <ul className="integration-tab filter-list flex flex-wrap items-center justify-center">
@@ -21,7 +23,7 @@ const IntegrateMedia = ({ integrations, categories }) => {
                   } btn btn-sm cursor-pointer`}
                   onClick={() => setTab("")}
                 >
-                  All Categories
+                  Tous les Projets
                 </span>
               </li>
               {categories.map((category, i) => (

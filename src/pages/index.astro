@@ -10,6 +10,8 @@ import FeaturedBlog from "@components/blog/FeaturedBlog.astro";
 import { getEntryBySlug } from "astro:content";
 import { sortByDate } from "@lib/utils/sortFunctions";
 import { getSinglePage } from "@lib/contentParser.astro";
+import IntegrateMedia from "@layouts/function-components/IntegrateMedia";
+import { getTaxonomy } from "@lib/taxonomyParser.astro";
 
 const { blog_folder } = config.settings;
 const posts = await getSinglePage(blog_folder);
@@ -17,6 +19,9 @@ const sortedPosts = sortByDate(posts);
 const featuredPost = sortedPosts.filter((item) => item.data.featured);
 const homepage = await getEntryBySlug("homepage", "index");
 const { banner, key_features, service, testimonial } = homepage.data;
+
+const categories = await getTaxonomy("integrations", "categories");
+const integrations = await getSinglePage("integrations");
 ---
 
 <Base>
@@ -27,6 +32,12 @@ const { banner, key_features, service, testimonial } = homepage.data;
    <div class="container">
         <FeaturedBlog posts = {featuredPost}/>
    </div>
+
+   <IntegrateMedia
+    client:load
+    integrations={integrations}
+    categories={categories}
+  />
   
   <KeyFeatures key_features={key_features} />
   <!-- service -->
