@@ -10,21 +10,21 @@ banner:
 
 ##key features
 key_features:
-  title: "The Highlighting Part Of Our Solution"
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi egestas Werat viverra id et aliquet. vulputate egestas sollicitudin.
+  title: "Défendre la Démocratie, la Gouvernance Juste et les Droits de l'Homme à travers les TIC"
+  description: Nous AfricTivistes, mouvement panafricain d’activistes pour la démocratie, porte un certain nombre de valeurs qui guident nos actions et notre vision. Elles se concentrent principalement sur le respect de la loi, l’impartialité politique, la protection des processus démocratiques, et l’utilisation des technologies de l’information et de la communication (TIC) pour promouvoir la démocratie, la bonne gouvernance et les droits de l’Homme.
   feature_list:
     - icon: "map"  #icon package react-feather-icon [https://feathericons.com/]
-      title: Live Caption
-      content: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      title: Respect du cadre légal
+      content: Les Africtivistes s’engagent à mener toutes leurs activités dans le cadre légal, ce qui signifie qu’ils respectent les lois et les régulations en vigueur dans les pays où ils opèrent.
     - icon: "lock"  #icon package react-feather-icon [https://feathericons.com/]
-      title: Smart Reply
-      content: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      title: Politique citoyenne non partisane
+      content: Les Africtivistes maintiennent une position apolitique, c’est-à-dire qu’ils ne soutiennent aucun parti politique spécifique et qu’ils agissent dans l’intérêt de tous les citoyens. Leur objectif est d’encourager une participation politique active et informée de tous les citoyens, quelle que soit leur affiliation politique.
     - icon: "link"  #icon package react-feather-icon [https://feathericons.com/]
-      title: Sound Amplifier
-      content: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      title: Protection des processus démocratiques
+      content: Les Africtivistes s’engagent à garantir des processus électoraux et démocratiques. Cela comprend le suivi des élections pour garantir leur intégrité, l’éducation civique pour informer les citoyens de leurs droits et responsabilités, et la défense des libertés civiles et politiques fondamentales.
     - icon: "bell"  #icon package react-feather-icon [https://feathericons.com/]
-      title: Sound Amplifier
-      content: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      title:  Utilisation des TIC pour la démocratie, la bonne gouvernance et les droits de l’Homme
+      content: Les Africtivistes reconnaissent le potentiel des technologies de l’information et de la communication pour promouvoir la démocratie et la bonne gouvernance. Ils utilisent ces technologies pour informer les citoyens, faciliter leur participation politique, surveiller les actions des gouvernements, et défendre les droits de l’Homme.
     - icon: "monitor"  #icon package react-feather-icon [https://feathericons.com/]
       title: Smart Reply
       content: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -37,13 +37,6 @@ key_features:
     - icon: "bell"  #icon package react-feather-icon [https://feathericons.com/]
       title: Sound Amplifier
       content: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    - icon: "map"  #icon package react-feather-icon [https://feathericons.com/]
-      title: Smart Reply
-      content: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-    - icon: "monitor"  #icon package react-feather-icon [https://feathericons.com/]
-      title: Live Caption
-      content: Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-
 #service
 service:
   homepage_tab:
@@ -80,52 +73,34 @@ service:
 
 #testimonial
 testimonial:
-  title: Our customers have nice things to say about us
-  description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi egestas Werat viverra id et aliquet. vulputate egestas sollicitudin.
+  title: Apprendre avec AfriCtivistes
+  description: En partage avec vous, des définitions, mots clés du langage web activiste et autres quotes inspirantes. Il sera également question d’approfondir des problématiques spécifiques sur la bonne gouvernance et la transparence, la démocratie et l’Etat de droit, la cyberdémocratie, le E-gouvernance, la cybersécurité…
   testimonial_list:
-    - author: David Cameron
-      avatar: "/images/users/user-5.png"
-      organization: meta limited
-      rating: four
-      content: Our platform helps build secure onboarding authentica experiences & engage your users. We build .
-    - author: David Cameron
+    - title: Fact-checking
+      avatar: "https://africtivistes.net/static/190bc893e0763ee7d42fc5e0e3fd7edb/7784c/IMG_4332.webp"
+      content: Anglicisme, Action de verifier la veracité des faits .
+    - title: David Cameron
       avatar: "/images/users/user-6.png"
-      organization: meta limited
-      rating: four
       content: Our platform helps build secure onboarding authentica experiences & engage your users. We build .
-    - author: David Cameron
+    - title: David Cameron
       avatar: "/images/users/user-2.png"
-      organization: meta limited
-      rating: three
       content: Our platform helps build secure onboarding authentica experiences & engage your users. We build .
-    - author: David Cameron
+    - title: David Cameron
       avatar: "/images/users/user-3.png"
-      organization: meta limited
-      rating: five
       content: Our platform helps build secure onboarding authentica experiences & engage your users. We build .
-    - author: David Cameron
+    - title: David Cameron
       avatar: "/images/users/user-4.png"
-      organization: meta limited
-      rating: five
       content: Our platform helps build secure onboarding authentica experiences & engage your users. We build .
-    - author: David Cameron
+    - title: David Cameron
       avatar: "/images/users/user-1.png"
-      organization: meta limited
-      rating: three
       content: Our platform helps build secure onboarding authentica experiences & engage your users. We build .
-    - author: David Cameron
+    - title: David Cameron
       avatar: "/images/users/user-5.png"
-      organization: meta limited
-      rating: five
       content: Our platform helps build secure onboarding authentica experiences & engage your users. We build .
-    - author: David Cameron
+    - title: David Cameron
       avatar: "/images/users/user-5.png"
-      organization: meta limited
-      rating: five
       content: Our platform helps build secure onboarding authentica experiences & engage your users. We build .
-    - author: David Cameron
+    - title: David Cameron
       avatar: "/images/users/user-5.png"
-      organization: meta limited
-      rating: five
       content: Our platform helps build secure onboarding authentica experiences & engage your users. We build .
 ---

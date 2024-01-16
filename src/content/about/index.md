@@ -12,19 +12,35 @@ buttons:
 
 # counter
 counter:
-  - name: "Customers"
-    number: 25
+  - name: "Participations a nos sommets"
+    number: 550
     messurment: M
     color: "#A3A1FB"
-  - name: "Customers"
-    number: 440
+  - name: "Projets en cours"
+    number: 12
     messurment: M
     color: "#5EE2A0"
-  - name: "Customers"
-    number: 50
+  - name: "Membres a traves 45 pays"
+    number: 400
     messurment: K
     color: "#FE6019"
-  - name: "Customers"
+  - name: "Beneficiares de nos formations en presentiel"
+    number: 1350
+    messurment: K
+    color: "#FEC163"
+  - name: "Apprenants sur le MOOC"
+    number: 2000
+    messurment: M
+    color: "#A3A1FB"
+  - name: "Appuis techniques aux elections"
+    number: 10
+    messurment: M
+    color: "#5EE2A0"
+  - name: "Activistes pro-democratie et journalistes en danger appuyés"
+    number: 7
+    messurment: K
+    color: "#FE6019"
+  - name: "Communautés d'acteurs de changement propulsées"
     number: 20
     messurment: K
     color: "#FEC163"
