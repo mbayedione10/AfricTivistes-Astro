@@ -1,5 +1,4 @@
 import { useRef, useState } from "react";
-import { Star } from "react-feather";
 import SwiperCore, { Autoplay, Pagination } from "swiper";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -38,20 +37,10 @@ const TestimonialSlider = ({ list }) => {
           <SwiperSlide key={"feature-" + i}>
             <div className="review">
               <div className="review-author-avatar bg-gradient">
-                <img src={item.avatar} alt="" />
+                <img className="w-75 rounded-full " src={item.avatar} alt="" />
               </div>
-              <h4 className="mb-2">{item.author}</h4>
-              <p className="mb-4 text-[#666]">{item.organization}</p>
+              <h4 className="mb-2">{item.title}</h4>
               <p>{item.content}</p>
-              <div
-                className={`review-rating mt-6 flex items-center justify-center space-x-2.5 ${item.rating}  `}
-              >
-                <Star />
-                <Star />
-                <Star />
-                <Star />
-                <Star />
-              </div>
             </div>
           </SwiperSlide>
         ))}
