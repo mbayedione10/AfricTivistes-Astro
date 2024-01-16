@@ -7,6 +7,7 @@ import Service from "@layouts/components/Service.astro";
 import Cta from "@layouts/partials/Cta.astro";
 import config from "@config/config.json";
 import FeaturedBlog from "@components/blog/FeaturedBlog.astro";
+import CounterComponent from "@components/about/CounterComponent.astro";
 import { getEntryBySlug } from "astro:content";
 import { sortByDate } from "@lib/utils/sortFunctions";
 import { getSinglePage } from "@lib/contentParser.astro";
@@ -18,7 +19,9 @@ const posts = await getSinglePage(blog_folder);
 const sortedPosts = sortByDate(posts);
 const featuredPost = sortedPosts.filter((item) => item.data.featured);
 const homepage = await getEntryBySlug("homepage", "index");
+const about = await getEntryBySlug("about", "index");
 const { banner, key_features, service, testimonial } = homepage.data;
+const { counter } = about.data;
 
 const categories = await getTaxonomy("integrations", "categories");
 const integrations = await getSinglePage("integrations");
@@ -27,22 +30,27 @@ const integrations = await getSinglePage("integrations");
 <Base>
   <!-- banner -->
   <Banner banner={banner} />
-  <!-- key features -->
-  <!-- Featured Blog -->
-   <div class="container">
+  <div class="container">
         <h2 class="h4 mb-4">Dernieres actualités</h2>
         <FeaturedBlog posts = {featuredPost}/>
-   </div>
-
-   <IntegrateMedia
-    client:load
-    integrations={integrations}
-    categories={categories}
-  />
-    <div class="container">
+  </div>
+  <!-- key features -->
+  <KeyFeatures key_features={key_features}/>
+  <!-- Featured Blog -->
+   <div class="container">
+        <IntegrateMedia
+          client:load
+          integrations={integrations}
+          categories={categories}
+        />
         <h2 class="h4 mb-4">Communiqués</h2>
         <FeaturedBlog posts = {featuredPost}/>
+        <CounterComponent counter={counter} />
    </div>
+   </div>
+  
+  <KeyFeatures key_features={key_features} />
+    </div>
   
   <KeyFeatures key_features={key_features} />
   <!-- service -->
